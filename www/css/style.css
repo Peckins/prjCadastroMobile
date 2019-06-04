@@ -1,0 +1,21 @@
+/*Arquivo de estilização do aplicativo*/
+
+.jumbotron{
+  margin-top: 40%;
+  text-align: center;
+}
+.input-group{
+  margin-top: 10%;
+}
+
+#enviar, #listar{
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 15px;
+}
+body{
+  background-color: lightblue;
+}
+.modal{
+  margin-top: 35%;
+}

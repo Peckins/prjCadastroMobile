@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <!-- Biblioteca bootstrap css -->
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Biblioteca jquery js -->
+  <script src="components/jquery-3.4.1.min.js"></script>
+
+  <!-- Biblioteca popper js -->
+  <script src="components/popper.min.js"></script>
+
+  <!-- Biblioteca bootstrap js -->
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  
+  <!-- Arquivo para conexão com banco de dados -->
+  <script src="components/app.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <div class="jumbotron bg-success">
+      
+      <!-- Formulário de preenchimento -->
+      <div class="form-group">
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Nome</span>
+          </div>
+
+          <input type="text" class="form-control" aria-label="Small" placeholder="digite seu nome" id="nome">
+        </div>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">E-mail</span>
+          </div>
+
+          <input type="text" class="form-control" aria-label="Small" placeholder="digite seu email" id="email">
+        </div>
+
+        <button class="btn btn-secondary mt-3" id="enviar">Enviar</button>
+        <a class="btn btn-secondary mt-3" id="listar" href="listar.html">Listar</a>
+      </div>
+      <!-- Fim do formulário -->
+
+    </div>
+  </div>
+
+  <!-- Janela para informar que o servidor está sendo carregado -->
+  <div id="meuModal" class="modal fade" data-backdrop="static" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">Cadastrar</div>
+
+        <div class="modal-body">
+           <div class="jumbotron text-center mt-5">
+             <h5>Conectando aguarde....</h5>
+           </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
